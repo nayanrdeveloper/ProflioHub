@@ -1,3 +1,4 @@
+import { Colors } from '@/src/constants/Colors';
 import { ButtonProps } from '@/src/types';
 import React from 'react';
 import {
@@ -11,10 +12,10 @@ import {
 const CommonButton = ({
     title,
     onPress,
-    backgroundColor,
-    borderColor,
-    borderRadius,
-    textColor,
+    backgroundColor = Colors.primary,
+    borderColor = 'transparent',
+    borderRadius = 20,
+    textColor = Colors.white,
     style,
     textStyle,
 }: ButtonProps) => {
