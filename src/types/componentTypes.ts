@@ -13,6 +13,8 @@ export interface InputProps {
     placeholder?: string;
     secureTextEntry?: boolean;
     error?: string;
+    isFocused?: boolean;
+    keyboardType?: 'default' | 'numeric';
 }
 
 export interface ButtonProps {
