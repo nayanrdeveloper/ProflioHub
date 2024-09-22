@@ -1,36 +1,34 @@
 {
-  "expo": {
-    "name": "ProFolioHub",
-    "slug": "ProFolioHub",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/logo/logo_favicon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/logo/logo_splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#E2F7F2"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/logo/logo_favicon.png",
-        "backgroundColor": "#E2F7F2"
-      }
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/logo/logo_favicon.png"
-    },
-    "plugins": [
-      "expo-router"
-    ],
-    "experiments": {
-      "typedRoutes": true
+    "expo": {
+        "name": "ProFolioHub",
+        "slug": "ProFolioHub",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/images/logo/logo_favicon.png",
+        "scheme": "myapp",
+        "userInterfaceStyle": "automatic",
+        "splash": {
+            "image": "./assets/images/logo/logo_splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#E2F7F2"
+        },
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/images/logo/logo_favicon.png",
+                "backgroundColor": "#E2F7F2"
+            }
+        },
+        "web": {
+            "bundler": "metro",
+            "output": "static",
+            "favicon": "./assets/images/logo/logo_favicon.png"
+        },
+        "plugins": ["expo-router"],
+        "experiments": {
+            "typedRoutes": true
+        }
     }
-  }
 }
