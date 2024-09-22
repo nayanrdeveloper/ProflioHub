@@ -1,6 +1,12 @@
-import { TouchableOpacity, Text, StyleSheet, ViewStyle, TextStyle } from 'react-native';
+import {
+    TouchableOpacity,
+    Text,
+    StyleSheet,
+    ViewStyle,
+    TextStyle,
+} from 'react-native';
 
-export interface InputProps{
+export interface InputProps {
     label?: string;
     value: string;
     onChangeText: (text: string) => void;
@@ -11,11 +17,11 @@ export interface InputProps{
 
 export interface ButtonProps {
     title: string;
-  onPress: () => void;
-  backgroundColor?: string;
-  borderColor?: string;
-  textColor?: string;
-  borderRadius?: number;
-  style?: ViewStyle;
-  textStyle?: TextStyle;
+    onPress: () => void;
+    backgroundColor?: string;
+    borderColor?: string;
+    textColor?: string;
+    borderRadius?: number;
+    style?: ViewStyle;
+    textStyle?: TextStyle;
 }
