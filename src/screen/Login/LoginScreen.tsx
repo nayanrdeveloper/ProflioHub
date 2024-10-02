@@ -3,8 +3,10 @@ import React from 'react';
 import Input from '@/src/components/common/Input';
 import CommonLayout from '@/src/components/layouts/CommonLayouts';
 import CommonButton from '@/src/components/common/CommonButton';
-import { Colors } from '@/src/constants/Colors';
+
 import { useRouter } from 'expo-router';
+import { Colors } from '@/src/constants/StylesConstant/Colors';
+import { authConstant } from '@/src/constants/ScreensConstants/AuthConstant';
 
 export default function LoginScreen() {
     const onchangeEmail = () => {
@@ -16,7 +18,7 @@ export default function LoginScreen() {
 
     return (
         <CommonLayout>
-            <View style={styles.container}>
+            <View>
                 <View>
                     <Image
                         source={require('../../../assets/images/logo/logo_favicon.png')}
@@ -25,32 +27,39 @@ export default function LoginScreen() {
                 </View>
                 <View>
                     <Input
-                        label="Email"
-                        placeholder="Enter your email"
+                        label={authConstant.login.inputs.email.label}
+                        placeholder={
+                            authConstant.login.inputs.email.placeHolder
+                        }
                         onChangeText={onchangeEmail}
                         value="nayanrdeveloper@gmail.com"
                     />
                     <Input
-                        label="Password"
+                        label={authConstant.login.inputs.password.label}
                         secureTextEntry
-                        placeholder="Enter your email"
+                        placeholder={
+                            authConstant.login.inputs.password.placeHolder
+                        }
                         onChangeText={onchangeEmail}
                         value="nayanrdeveloper@gmail.com"
                         isFocused={true}
                     />
                 </View>
 
-                <CommonButton title="Submit" onPress={onHandleLogin} />
+                <CommonButton
+                    title={authConstant.login.loginButton}
+                    onPress={onHandleLogin}
+                />
 
                 <View style={styles.sign_up_label}>
                     <Text style={{}}>
-                        Don't have an account?
+                        {authConstant.login.noAccount}
                         <Text
                             onPress={() => router.push('/registration')}
                             style={styles.sign_up_text}
                         >
                             {' '}
-                            Sign Up
+                            {authConstant.login.signUp}
                         </Text>
                     </Text>
                 </View>
@@ -60,11 +69,6 @@ export default function LoginScreen() {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        // flexDirection: 'column',
-        // columnGap: 20,
-        // marginTop: 10,
-    },
     sign_up_label: {
         textAlign: 'center',
         alignItems: 'center',

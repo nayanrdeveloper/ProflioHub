@@ -7,7 +7,6 @@ export default function index() {
             style={{
                 flex: 1,
                 justifyContent: 'center',
-                // alignItems: "center",
             }}
         >
             <LoginScreen />
