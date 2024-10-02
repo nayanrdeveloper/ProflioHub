@@ -1,10 +1,4 @@
-import {
-    TouchableOpacity,
-    Text,
-    StyleSheet,
-    ViewStyle,
-    TextStyle,
-} from 'react-native';
+import { ViewStyle, TextStyle } from 'react-native';
 
 export interface InputProps {
     label?: string;
